@@ -54,6 +54,7 @@ public class Platform {
     private static final String OPENBSD = "openbsd";
     private static final String LINUX = "linux";
     private static final String SOLARIS = "sunos";
+    private static final String OPENVMS = "openvms";
 
     // TODO: investigate supported platforms for OpenJDK7?
 
@@ -70,6 +71,7 @@ public class Platform {
     public static final boolean IS_OPENBSD = OS_NAME_LC.startsWith(OPENBSD);
     public static final boolean IS_LINUX = OS_NAME_LC.startsWith(LINUX);   
     public static final boolean IS_SOLARIS = OS_NAME_LC.startsWith(SOLARIS);
+    public static final boolean IS_OPENVMS = OS_NAME_LC.equals(OPENVMS);
     public static final boolean IS_BSD = IS_MAC || IS_FREEBSD || IS_OPENBSD;
     
     public static final String envCommand() {
